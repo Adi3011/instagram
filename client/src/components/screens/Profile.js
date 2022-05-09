@@ -19,13 +19,13 @@ const Profile  = ()=>{
     useEffect(()=>{
        if(image){
         const data = new FormData()
-        data.append("file",image)
-        data.append("upload_preset","insta-clone")
-        data.append("cloud_name","cnq")
-        fetch("https://api.cloudinary.com/v1_1/cnq/image/upload",{
-            method:"post",
-            body:data
-        })
+       data.append("file",image)
+       data.append("upload_preset","insta_clone")
+       data.append("cloud_name","cloud1235")
+       fetch("https://api.cloudinary.com/v1_1/cloud1235/image/upload",{
+           method:"post",
+           body:data
+       })
         .then(res=>res.json())
         .then(data=>{
     
